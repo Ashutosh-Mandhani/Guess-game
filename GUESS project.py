@@ -4,7 +4,7 @@ guesses=0
 name=input("Enter your name: ")
 name=name.capitalize()
 user_guess=None
-with open("D:\codes\python\high.txt",'r') as f:
+with open("D:\codes\python\high.txt",'r') as f:   #download the high.txt file and add the files location in your device here!
     high_score=int(f.readline())
 
 while(user_guess!=random_num):
@@ -21,6 +21,6 @@ while(user_guess!=random_num):
         guesses+=1
 print("You have guessed in "+ str(guesses)+ " guesses")
 if guesses<high_score:
-    with open("D:\codes\python\high.txt",'w') as f:
+    with open("D:\codes\python\high.txt",'w') as f:   #download the high.txt file and add the files location in your device here!
         f.write(str(guesses) +"\ncreated by "+ name)
     print("You have also created the high score!")
